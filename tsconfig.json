@@ -3,6 +3,7 @@
     "baseUrl": "./src",
     "target": "es5",
     "lib": [
+      "es6",
       "dom",
       "dom.iterable",
       "esnext"
@@ -17,6 +18,8 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "strictNullChecks": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
     "noEmit": true,
     "paths": {
       "@/test/*": [
