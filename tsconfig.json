@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
     "target": "es5",
     "lib": [
       "dom",
@@ -11,16 +12,28 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "strictNullChecks": true,
     "noEmit": true,
+    "paths": {
+      "@/test/*": [
+        "test/*"
+      ],
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "rootDirs": [
+      "src",
+      "test"
+    ],
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src",
+    "test"
   ]
 }
