@@ -1,8 +1,8 @@
+import Router from 'routes/routes';
+
 function App(): JSX.Element {
   return (
-    <div className="App">
-      a
-    </div>
+    <Router />
   );
 }
 
